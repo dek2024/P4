@@ -1,0 +1,73 @@
+/* DEVELOPER: Your Name, IS117-xxx, Spring 2024 */
+
+/* General */
+body {
+  background-color: #1a1a1a; /* Matches the dark theme */
+  color: #fff; /* Text color for readability */
+  font-family: Arial, sans-serif;
+}
+
+h1, h2 {
+  color: #fff; /* Headers should stand out */
+}
+
+a {
+  color: #fff; /* Keep links white for visibility */
+}
+
+a:hover {
+  text-decoration: none; /* Clean hover effect */
+}
+
+/* Navigation Bar */
+.navbar {
+  margin-bottom: 20px;
+}
+
+.nav-link.active {
+  color: #0d6efd !important;
+}
+
+/* Header */
+header {
+  border-bottom: 2px solid #333;
+}
+
+/* Overview Section */
+.container h2 {
+  font-size: 1.75rem;
+  margin-bottom: 15px;
+}
+
+.container p {
+  font-size: 1rem;
+}
+
+.container .btn-primary {
+  background-color: #0d6efd;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+}
+
+/* Cards */
+.card {
+  background-color: #333;
+  border: 1px solid #444;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.card-title {
+  color: #0d6efd;
+}
+
+.card img {
+  height: 150px;
+  object-fit: cover;
+}
+
+/* Footer */
+footer {
+  border-top: 2px solid #333;
+}
