@@ -56,7 +56,13 @@ header {
   border: 1px solid #444;
   border-radius: 10px;
   padding: 10px;
-  overflow: hidden; /* Ensures no overflow if the image scales */
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s; /* Smooth animation for hover effects */
+}
+
+.card:hover {
+  transform: scale(1.05); /* Slightly enlarge the card on hover */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Add a shadow effect */
 }
 
 .card-title {
@@ -64,12 +70,16 @@ header {
 }
 
 .card img {
-  width: 100%; /* Make the image take the full width of the card */
-  height: 100%; /* Make the image take the full height of the card */
-  object-fit: cover; /* Ensures the image is cropped proportionally to fill the space */
-  border-radius: 10px; /* Optional: Matches the card's border-radius for a seamless look */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
 }
 
+.card-link {
+  text-decoration: none; /* Remove underline from the clickable area */
+  color: inherit; /* Keep text colors the same */
+}
 
 /* Footer */
 footer {
