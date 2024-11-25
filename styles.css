@@ -58,6 +58,10 @@ header {
   padding: 10px;
   overflow: hidden;
   transition: transform 0.3s, box-shadow 0.3s; /* Smooth animation for hover effects */
+  display: flex;
+  flex-direction: column; /* Ensures consistent layout of card content */
+  justify-content: space-between; /* Spreads content evenly */
+  height: 100%; /* Ensures consistent height across all cards */
 }
 
 .card:hover {
@@ -67,12 +71,13 @@ header {
 
 .card-title {
   color: #0d6efd;
+  margin: 10px 0; /* Adds spacing around the title */
 }
 
 .card img {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  max-height: 200px; /* Sets a consistent height for images */
+  object-fit: cover; /* Ensures the image is cropped while keeping the aspect ratio */
   border-radius: 10px;
 }
 
