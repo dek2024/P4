@@ -80,6 +80,33 @@ header {
   text-decoration: none; /* Remove underline from the clickable area */
   color: inherit; /* Keep text colors the same */
 }
+/* Ensure cards in a row have the same height */
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%; /* Forces all cards to occupy the same height */
+}
+
+/* Ensure images do not stretch */
+.card img {
+  flex-shrink: 0; /* Prevent shrinking */
+  max-height: 200px; /* Set a consistent height for images */
+  object-fit: cover; /* Keeps the aspect ratio while cropping the overflow */
+}
+
+/* Ensure card titles and text take up appropriate space */
+.card-title {
+  margin: 10px 0;
+}
+
+.card-body {
+  flex-grow: 1; /* Distributes extra space evenly */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 
 /* Footer */
 footer {
